@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace uOSC
+namespace exiii.Unity.OSC
 {
 
 public static class Reader

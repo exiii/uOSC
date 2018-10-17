@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace uOSC
+namespace exiii.Unity.OSC
 {
 
 public struct Message

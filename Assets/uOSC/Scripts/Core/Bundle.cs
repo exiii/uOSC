@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Collections.Generic;
 
-namespace uOSC
+namespace exiii.Unity.OSC
 {
 
 public class Bundle

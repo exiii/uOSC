@@ -2,7 +2,7 @@
 using System.Net;
 using System.Net.Sockets;
 
-namespace uOSC
+namespace exiii.Unity.OSC
 {
 
 public abstract class Udp
