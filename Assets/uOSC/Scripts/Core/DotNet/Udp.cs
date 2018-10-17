@@ -1,6 +1,5 @@
 ﻿#if !NETFX_CORE
 
-using UnityEngine;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
