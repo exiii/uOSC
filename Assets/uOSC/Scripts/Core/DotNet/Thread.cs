@@ -1,7 +1,7 @@
 ﻿#if !NETFX_CORE
 
-using UnityEngine;
 using System;
+using System.Diagnostics;
 
 namespace uOSC.DotNet
 {
@@ -34,8 +34,8 @@ public class Thread : uOSC.Thread
             }
             catch (Exception e)
             {
-                Debug.LogError(e.Message);
-                Debug.LogError(e.StackTrace);
+                Debug.Write(e.Message);
+                Debug.Write(e.StackTrace);
             }
         }
     }
