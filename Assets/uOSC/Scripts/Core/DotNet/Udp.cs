@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 
-namespace uOSC.DotNet
+namespace exiii.Unity.OSC.DotNet
 {
 
-public class Udp : uOSC.Udp
+public class Udp : exiii.Unity.OSC.Udp
 {
     enum State
     {

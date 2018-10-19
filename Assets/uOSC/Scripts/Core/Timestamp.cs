@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace uOSC
+namespace exiii.Unity.OSC
 {
 
 public struct Timestamp

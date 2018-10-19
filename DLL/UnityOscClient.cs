@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
-using uOSC;
+using exiii.Unity.OSC;
 
 namespace exiii.Unity.OSC
 {
@@ -26,13 +26,13 @@ namespace exiii.Unity.OSC
         Udp udp_ = new uOSC.Uwp.Udp();
         Thread thread_ = new uOSC.Uwp.Thread();
 #else
-        private Udp m_Udp = new uOSC.DotNet.Udp();
-        private Thread m_Thread = new uOSC.DotNet.Thread();
+        private Udp m_Udp = new exiii.Unity.OSC.DotNet.Udp();
+        private Thread m_Thread = new exiii.Unity.OSC.DotNet.Thread();
 #endif
         private Queue<object> m_Messages = new Queue<object>();
         private object m_LockObject = new object();
 
-        public void Open(string remoteIP, int remotePort, string localIP = "")
+        public void Open(string remoteIP, int remotePort, string localIP)
         {
             m_RemoteIPString = remoteIP;
             RemotePort = remotePort;

@@ -3,10 +3,10 @@
 using System;
 using System.Diagnostics;
 
-namespace uOSC.DotNet
+namespace exiii.Unity.OSC.DotNet
 {
 
-public class Thread : uOSC.Thread
+public class Thread : exiii.Unity.OSC.Thread
 {
     System.Threading.Thread thread_;
     bool isRunning_ = false;

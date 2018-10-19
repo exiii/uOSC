@@ -1,4 +1,4 @@
-﻿namespace uOSC
+﻿namespace exiii.Unity.OSC
 {
 
 public abstract class Thread

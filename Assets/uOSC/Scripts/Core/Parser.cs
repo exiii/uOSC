@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace uOSC
+namespace exiii.Unity.OSC
 {
 
 public static class Identifier
