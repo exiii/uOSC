@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace uOSC
+namespace exiii.Unity.OSC
 {
 
 public static class Writer

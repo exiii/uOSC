@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
-namespace uOSC
+namespace exiii.Unity.OSC
 {
 
 public static class Identifier
@@ -50,10 +51,7 @@ public class Parser
 
         if (pos != endPos)
         {
-            Debug.LogErrorFormat(
-                "The parsed data size is inconsitent with the given size: {0} / {1}", 
-                pos,
-                endPos);
+            Debug.Write($"The parsed data size is inconsitent with the given size: {pos} / {endPos}");
         }
     }
 
@@ -83,8 +81,8 @@ public class Parser
             }
             else
             {
-                Debug.LogErrorFormat("Given data is invalid (bundle size ({0}) is not a multiple of 4).", contentSize);
                 pos += contentSize;
+                Debug.Write($"Given data is invalid (bundle size ({contentSize}) is not a multiple of 4");
             }
         }
     }

@@ -1,8 +1,6 @@
-﻿using UnityEngine;
-using System;
-using System.IO;
+﻿using System.IO;
 
-namespace uOSC
+namespace exiii.Unity.OSC
 {
 
 public static class Util

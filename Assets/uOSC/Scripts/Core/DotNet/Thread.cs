@@ -1,12 +1,12 @@
 ﻿#if !NETFX_CORE
 
-using UnityEngine;
 using System;
+using System.Diagnostics;
 
-namespace uOSC.DotNet
+namespace exiii.Unity.OSC.DotNet
 {
 
-public class Thread : uOSC.Thread
+public class Thread : exiii.Unity.OSC.Thread
 {
     System.Threading.Thread thread_;
     bool isRunning_ = false;
@@ -34,8 +34,8 @@ public class Thread : uOSC.Thread
             }
             catch (Exception e)
             {
-                Debug.LogError(e.Message);
-                Debug.LogError(e.StackTrace);
+                Debug.Write(e.Message);
+                Debug.Write(e.StackTrace);
             }
         }
     }
