@@ -32,7 +32,7 @@ namespace exiii.Unity.OSC
         private Queue<object> m_Messages = new Queue<object>();
         private object m_LockObject = new object();
 
-        public void Open(string remoteIP, int remotePort, string localIP = "")
+        public void Open(string remoteIP, int remotePort, string localIP)
         {
             m_RemoteIPString = remoteIP;
             RemotePort = remotePort;
